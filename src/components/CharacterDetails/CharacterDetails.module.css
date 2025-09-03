@@ -1,0 +1,67 @@
+/*
+ * Archivo: CharacterCard.module.css
+ * Descripción: Define los estilos para el componente CharacterCard.
+ */
+
+.card {
+  /*
+   * Estilos del contenedor principal de la tarjeta.
+   * Proporciona un borde, bordes redondeados, sombra y una transición
+   * para efectos de hover. El cursor indica que el elemento es interactivo.
+   */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  /*
+   * Efecto que se aplica al pasar el cursor sobre la tarjeta.
+   * La tarjeta se eleva ligeramente para dar un efecto visual de elevación.
+   */
+  transform: translateY(-5px);
+}
+
+.image {
+  /*
+   * Estilos para la imagen del personaje.
+   * Asegura que la imagen ocupe todo el ancho del contenedor,
+   * manteniendo una altura fija y ajustándose a la proporción
+   * sin distorsionarse.
+   */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info {
+  /*
+   * Contenedor para la información del personaje (nombre y estado).
+   * Añade espaciado interno para separar el texto de los bordes.
+   */
+  padding: 16px;
+}
+
+.name {
+  /*
+   * Estilos para el nombre del personaje.
+   * Define el tamaño y color de la fuente, con un margen inferior para
+   * separarlo del estado.
+   */
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.status {
+  /*
+   * Estilos para el estado del personaje.
+   * Define el tamaño y color de la fuente.
+   */
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}

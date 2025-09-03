@@ -1,0 +1,80 @@
+/*
+ * Archivo: src/components/CharacterCard/CharacterCard.module.css
+ * Descripción: Define los estilos para las tarjetas de personajes,
+ * incluyendo un diseño moderno con efectos de hover.
+ */
+
+.card {
+  /*
+   * Estilos de la tarjeta contenedora.
+   * Proporciona un fondo blanco, bordes redondeados, sombra suave y transiciones
+   * para una experiencia de usuario fluida.
+   */
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.card:hover {
+  /*
+   * Efecto al pasar el cursor sobre la tarjeta.
+   * La tarjeta se eleva ligeramente y la sombra se intensifica,
+   * proporcionando un efecto visual interactivo.
+   */
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  /*
+   * Estilos de la imagen del personaje.
+   * Asegura que la imagen sea responsiva y mantenga una proporción
+   * correcta dentro de la tarjeta. Los bordes redondeados y el margen
+   * la separan del texto.
+   */
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.info {
+  /*
+   * Contenedor para el nombre y el estado.
+   * Utiliza Flexbox para organizar el texto de manera vertical y centrada.
+   */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  /*
+   * Estilos para el nombre del personaje.
+   * Define el tamaño, peso de la fuente y color.
+   */
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.status {
+  /*
+   * Estilos para el estado del personaje (vivo/muerto).
+   * Proporciona un tamaño y color diferentes para distinguirlo
+   * del nombre.
+   */
+  font-size: 1rem;
+  color: #666;
+}

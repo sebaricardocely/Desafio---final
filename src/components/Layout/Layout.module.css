@@ -1,0 +1,23 @@
+/*
+  Define el diseño y estructura principal del contenedor de la aplicación.
+ */
+
+.container {
+  /*
+   * Establece un ancho máximo para el contenedor, asegurando que el contenido
+   
+   */
+  max-width: 1200px;
+  
+  /*
+   * Centra el contenedor horizontalmente dentro de su elemento padre
+
+   */
+  margin: 0 auto;
+  
+  /*
+   * Añade un espacio interno alrededor del contenido, lo que evita que
+ 
+   */
+  padding: 20px;
+}
